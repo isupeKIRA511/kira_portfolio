@@ -1,22 +1,33 @@
 <script>
-  import Navbar from './components/Navbar.svelte';
-  import Hero from './sections/Hero.svelte';
-  import About from './sections/About.svelte';
-  import Skills from './sections/Skills.svelte';
-  import Projects from './sections/Projects.svelte';
-  import Experience from './sections/Experience.svelte';
-  import Contact from './sections/Contact.svelte';
-  import Footer from './components/Footer.svelte';
+  import Nav from "./components/Nav.svelte";
+  import Hero from "./components/Hero.svelte";
+  import Projects from "./components/Projects.svelte";
+  import About from "./components/About.svelte";
+  import Contact from "./components/Contact.svelte";
 
+  import { onMount } from "svelte";
+
+  let form = { name: "", email: "", subject: "", message: "" };
+
+  function submitForm() {
+    alert(`Message sent by ${form.name}`);
+  }
+
+  let animate = false;
+
+  onMount(() => {
+    animate = true;
+  });
 </script>
 
-<Navbar />
-<Hero />
-<About />
-<Skills />
-<Projects />
-<Experience />
-<Contact />
-<Footer />
+<main class="bg-black text-white min-h-screen px-6 md:px-20 py-10 font-sans">
+  <Nav {animate} />
 
-<main class="p-10"></main>
+  <Hero {animate} />
+
+  <Projects />
+
+  <About />
+
+  <Contact {form} {submitForm} />
+</main>
