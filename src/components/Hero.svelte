@@ -30,18 +30,21 @@
     </button>
 
     <div class="flex space-x-4 mt-4">
-      <a href="#" class="bg-gray-800 p-3 rounded-full hover:bg-lime-600 transition">
+      <a href="https://www.linkedin.com/in/bariq-aqeel-8653a7339/" target="_blank" class="bg-gray-800 p-3 rounded-full hover:bg-lime-600 transition">
         <Linkedin class="w-6 h-6" />
       </a>
+
       <a href="https://github.com/isupeKIRA511" target="_blank" class="bg-gray-800 p-3 rounded-full hover:bg-lime-600 transition">
         <Github class="w-6 h-6" />
       </a>
-      <a href="https://instagram.com/isupekira"
-  target="_blank" class="bg-gray-800 p-3 rounded-full hover:bg-lime-600 transition">
+
+      <a href="https://instagram.com/isupekira" target="_blank" class="bg-gray-800 p-3 rounded-full hover:bg-lime-600 transition">
         <Instagram class="w-6 h-6" />
       </a>
+</div>
+    
     </div>
-  </div>
+
 
   <div class="flex justify-center md:justify-end flex-1 mr-20">
     <div class="flex justify-end max-w-sm rounded-lg overflow-hidden bg-gray-300 translate-y-5 shadow-lg">

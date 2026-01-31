@@ -4,7 +4,12 @@
   import Projects from "./components/Projects.svelte";
   import About from "./components/About.svelte";
   import Contact from "./components/Contact.svelte";
+  import login from "./routes/Login.svelte";
 
+  let routes = {
+    "/login": login,
+  };
+  
   import { onMount } from "svelte";
 
   let form = { name: "", email: "", subject: "", message: "" };
@@ -28,6 +33,9 @@
   <Projects />
 
   <About />
-
   <Contact {form} {submitForm} />
+
+
+<!-- Router removed: Home route temporarily disabled to avoid import resolution error -->
+
 </main>
